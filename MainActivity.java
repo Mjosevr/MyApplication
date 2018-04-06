@@ -53,18 +53,22 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.imageButton1:
                 button.setImageResource(R.drawable.pescado);
+                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton2:
                 button.setImageResource(R.drawable.calabaza);
+                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton3:
                 button.setImageResource(R.drawable.hamburguesa);
+                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton4:
                 button.setImageResource(R.drawable.huevo);
+                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton5:
