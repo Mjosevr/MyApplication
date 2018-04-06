@@ -11,7 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-
+import java.util.Random;
 import static com.example.mauvi.myapplication.R.color.colorPrimary;
 
 public class MainActivity extends AppCompatActivity {
@@ -53,22 +53,18 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.imageButton1:
                 button.setImageResource(R.drawable.pescado);
-                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton2:
                 button.setImageResource(R.drawable.calabaza);
-                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton3:
                 button.setImageResource(R.drawable.hamburguesa);
-                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton4:
                 button.setImageResource(R.drawable.huevo);
-                button.setBackgroundColor(getResources().getColor(R.color.rojo));
                 contador.start();
                 break;
             case R.id.imageButton5:
@@ -95,6 +91,19 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
+    }
+
+    public int verificaNumerosRandom(){
+        Random rand = new Random();
+        int n1,n2,n3,n4,n5;
+        boolean caso=true;
+        n1 = rand.nextInt(9);
+        n2 = rand.nextInt(9);
+        n3 = rand.nextInt(9);
+        n4 = rand.nextInt(9);
+        n5 = rand.nextInt(9);
+        
+        return 0;
     }
 
     public void reiniciarFigura(ImageButton button){
